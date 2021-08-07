@@ -2,19 +2,19 @@ name: Bug Report
 description: Report a bug
 labels: [Bug]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Please provide as much detail as you can.
-        Thanks in advance!
+- type: markdown
+  attributes:
+    value: |
+      Please provide as much detail as you can.
+      Thanks in advance!
   
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: Describe what you were expecting and what actually happened.
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+- type: textarea
+  id: what-happened
+  attributes:
+    label: What happened?
+    description: Describe what you were expecting and what actually happened.     
+    placeholder: Tell us what you see!
+    value: "A bug happened!"
 
    - type: textarea
      id: repro
