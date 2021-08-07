@@ -15,16 +15,16 @@ body:
     placeholder: Tell us what you see!
     value: "A bug happened!"
 - type: textarea
-   id: repro
-   attributes:
-     label: Reproduction steps
-     description: "How do you trigger this bug? Please walk us through it step by step."
-     value: | multi line text
-       1.
-       2.
-       3.
-       ...
-     render: bash
+  id: repro
+  attributes:
+    label: Reproduction steps
+    description: "How do you trigger this bug? Please walk us through it step by step."
+    value: | multi line text
+      1.
+      2.
+      3.
+      ...
+    render: bash
 - type: input
   id: version
   attributes:
