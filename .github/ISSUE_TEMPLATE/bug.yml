@@ -1,11 +1,13 @@
 name: Bug Report
 description: Report a bug
-labels: [T-Bug]
+labels: [Bug]
 body:
   - type: markdown
     attributes:
       value: |
-        Please provide as much detail as you can. Thanks in advance!
+        Please provide as much detail as you can.
+        Thanks in advance!
+  
   - type: textarea
     id: what-happened
     attributes:
@@ -13,32 +15,25 @@ body:
       description: Describe what you were expecting and what actually happened.
       placeholder: Tell us what you see!
       value: "A bug happened!"
-    validations:
-      required: true
-  - type: textarea
-    id: repro-steps
-    attributes:
-      label: Repro steps
-      description: If you can reproduce the issue, please provide detailed repro steps here?
-      placeholder: 1. X, 2. Y, 3. Crash!
-    validations:
-      required: true
+
+   - type: textarea
+     id: repro
+     attributes:
+       label: Reproduction steps
+       description: "How do you trigger this bug? Please walk us through it step by step."
+       value: | multi line text
+         1.
+         2.
+         3.
+         ...
+       render: bash
+  
   - type: input
     id: version
     attributes:
       label: Version
       description: What version of the .NET SDK are you using?
-    validations:
-      required: true
-  - type: dropdown
-    id: flavour
-    attributes:
-      label: What SDK flavour are you using?
-      options:
-        - MongoDB Realm (i.e. Sync, auth, functions)
-        - Local Database only
-    validations:
-      required: true
+  
   - type: dropdown
     id: app-type
     attributes:
