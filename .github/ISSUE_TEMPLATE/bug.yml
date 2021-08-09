@@ -7,6 +7,7 @@ body:
       value: |
         Please provide as much detail as you can so we have a better chance of fixing the bug quickly. 
         Thanks for your contribution to improve this project!
+# "Severity"
   - type: dropdown
     id: frequency
     attributes:
@@ -36,11 +37,11 @@ body:
     validations:
       required: true
   - type: textarea
-      id: stacktrace
-      attributes:
-        label: Stacktrace & log output
-        description: If you're getting an exception/crash, please paste the stacktrace and/or any relevant log output.
-        render: shell
+    id: stacktrace
+    attributes:
+      label: Stacktrace & log output
+      description: If you're getting an exception/crash, please paste the stacktrace and/or any relevant log output.
+      render: shell
 # Repro information
   - type: dropdown
     id: repro
@@ -58,20 +59,20 @@ body:
       description: |
         If you can reproduce the bug, please provide detailed steps for how WE can reproduce it with the code below.
   - type: textarea
-      id: code-snippets
-      attributes:
-        label: Code snippets
-        description: |
-          Ideally please provide a self contained test case or link (to e.g. github repo) to a sample app that demonstrates the bug.
-          If that's not possible, please show code samples that highlights or reproduce the issue.
-          If relevant, include your model definitions.
+    id: code-snippets
+    attributes:
+      label: Code snippets
+      description: |
+        Ideally please provide a self contained test case or link (to e.g. github repo) to a sample app that demonstrates the bug.
+        If that's not possible, please show code samples that highlights or reproduce the issue.
+        If relevant, include your model definitions.
   - type: textarea
-      id: debugging-done
-      attributes:
-        label: Debugging done
-        description: |
-          Please describe the debugging you have already done and your analysis of that.
-          I.e. have you tried to use the latest version?
+    id: debugging-done
+    attributes:
+      label: Debugging done
+      description: |
+        Please describe the debugging you have already done and your analysis of that.
+        I.e. have you tried to use the latest version?
 # SDK 
   - type: input
     id: version
@@ -89,7 +90,6 @@ body:
         - MongoDB Realm (i.e. Sync, auth, functions)
     validations:
       required: true
-
 # Environment
   - type: input
     id: client-platforms
@@ -109,6 +109,7 @@ body:
         Gradle version: ...
     validations:
       required: false
+
 # .NET only
   - type: dropdown
     id: app-type
