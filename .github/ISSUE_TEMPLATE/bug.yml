@@ -8,15 +8,15 @@ body:
         Please provide as much detail as you can so we have a better chance of fixing the bug quickly. 
         Thanks for your contribution to improve this project!
   - type: dropdown
-      id: frequenciii
-      attributes:
-        label: How frequently does the bug occur?
-        options:
-          - Seen once
-          - Rarely
-          - Very frequently
-          - All the time
-        required: true
+    id: frequency
+    attributes:
+      label: How frequently does the bug occur?
+      options:
+        - Seen once
+        - Rarely
+        - Very frequently
+        - All the time
+      required: true
   - type: dropdown
     id: where
     attributes:
