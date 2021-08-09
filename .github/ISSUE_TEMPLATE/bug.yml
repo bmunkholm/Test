@@ -102,7 +102,7 @@ body:
     validations:
       required: true
 # Java specific variant
-- type: input
+  - type: input
     id: build-environment
     attributes:
       label: Build environment
