@@ -1,46 +1,132 @@
 name: Bug Report
 description: Report a bug
-labels: [Bug]
+labels: [T-Bug]
 body:
-- type: markdown
-  attributes:
-    value: |
-      Please provide as much detail as you can.
-      Thanks in advance!
-- type: textarea
-  id: what-happened
-  attributes:
-    label: What happened?
-    description: Describe what you were expecting and what actually happened.     
-    placeholder: Tell us what you see!
-    value: "A bug happened!"
-- type: textarea
-  id: repro
-  attributes:
-    label: Reproduction steps
-    description: "How do you trigger this bug? Please walk us through it step by step."
-    value: |
-      multi line text
-      1.
-      2.
-      3.
-      ...
-    render: bash
-- type: input
-  id: version
-  attributes:
-    label: Version
-    description: What version of the .NET SDK are you using?
-- type: dropdown
-  id: app-type
-  attributes:
-    label: What type of application is this?
-    options:
-      - Unity
-      - Xamarin
-- type: textarea
-  id: logs
-  attributes:
-    label: Relevant log output
-    description: Please copy and paste any relevant log output.
-    render: shell
+  - type: markdown
+    attributes:
+      value: |
+        Please provide as much detail as you can so we have a better chance of fixing the bug quickly. 
+        Thanks for your contribution to improve this project!
+# "Severity"
+  - type: dropdown
+      id: frequency
+      attributes:
+        label: How frequently does the bug occur?
+        options:
+          - Seen once
+          - Rarely
+          - Very frequently
+          - All the time
+        required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where does the bug occur?
+      options:
+        - Locally during development or testing
+        - In production
+      required: true 
+# Description
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: |
+        Describe what you were expecting and what actually happened.
+        How is it clear to you this is a bug in Realm and not your application?
+    validations:
+      required: true
+  - type: textarea
+      id: stacktrace
+      attributes:
+        label: Stacktrace & log output
+        description: If you're getting an exception/crash, please paste the stacktrace and/or any relevant log output.
+        render: shell
+# Repro information
+  - type: dropdown
+    id: repro
+    attributes:
+      label: Can you reproduce the bug?
+      options:
+        - Yes, always
+        - Yes, sometimes
+        - Not yet
+      required: true 
+  - type: textarea
+    id: repro-steps
+    attributes:
+      label: Reproduction steps
+      description: |
+        If you can reproduce the bug, please provide detailed steps for how WE can reproduce it with the code below.
+  - type: textarea
+      id: code-snippets
+      attributes:
+        label: Code snippets
+        description: |
+          Ideally please provide a self contained test case or link (to e.g. github repo) to a sample app that demonstrates the bug.
+          If that's not possible, please show code samples that highlights or reproduce the issue.
+          If relevant, include your model definitions.
+  - type: textarea
+      id: debugging-done
+      attributes:
+        label: Debugging done
+        description: |
+          Please describe the debugging you have already done and your analysis of that.
+          I.e. have you tried to use the latest version?
+# SDK 
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version(s) of the SDK has the bug appeared in?
+    validations:
+      required: true
+  - type: dropdown
+    id: sync
+    attributes:
+      label: What SDK flavour are you using?
+      options:
+        - Local Database only
+        - MongoDB Realm (i.e. Sync, auth, functions)
+    validations:
+      required: true
+
+# Environment
+  - type: input
+    id: client-platforms
+    attributes:
+      label: Client OS and version
+      description: What Client OS and version are you seeing the issue on?
+    validations:
+      required: true
+  - type: input
+    id: build-environment
+    attributes:
+      label: Build environment
+      description: Build environment versions
+      value: |
+        Android Studio version: ...
+        Android Build Tools version: ...
+        Gradle version: ...
+    validations:
+      required: false
+# .NET only
+  - type: dropdown
+    id: app-type
+    attributes:
+      label: What type of application is this?
+      options:
+        - Unity
+        - Xamarin
+        - WPF
+        - Console/Server
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: host-platforms
+    attributes:
+      label: Host OS and version
+      description: What Host OS and version are you seeing the issue on?
+    validations:
+      required: true
