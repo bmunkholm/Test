@@ -113,7 +113,6 @@ body:
         Gradle version: ...
     validations:
       required: false
-
 # .NET only
   - type: dropdown
     id: app-type
