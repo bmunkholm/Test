@@ -56,19 +56,19 @@ body:
     validations:
       required: true 
   - type: textarea
-    id: repro-steps
-    attributes:
-      label: Reproduction steps
-      description: |
-        If you can reproduce the bug, please provide detailed steps for how WE can reproduce it with the code below.
-  - type: textarea
     id: code-snippets
     attributes:
       label: Code snippets
       description: |
-        Ideally please provide a self contained test case or link (to e.g. github repo) to a sample app that demonstrates the bug.
+        Ideally, please provide a self contained test case or link (e.g. github repo) to a sample app that demonstrates the bug.
         If that's not possible, please show code samples that highlights or reproduce the issue.
         If relevant, include your model definitions.
+  - type: textarea
+    id: repro-steps
+    attributes:
+      label: Reproduction steps
+      description: |
+        If you can reproduce the bug, please provide detailed steps for how WE can reproduce it with the code above.
   - type: textarea
     id: debugging-done
     attributes:
