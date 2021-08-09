@@ -17,6 +17,7 @@ body:
         - Rarely
         - Very frequently
         - All the time
+    validations:
       required: true
   - type: dropdown
     id: where
@@ -25,6 +26,7 @@ body:
       options:
         - Locally during development or testing
         - In production
+    validations:
       required: true 
 # Description
   - type: textarea
@@ -51,6 +53,7 @@ body:
         - Yes, always
         - Yes, sometimes
         - Not yet
+    validations:
       required: true 
   - type: textarea
     id: repro-steps
