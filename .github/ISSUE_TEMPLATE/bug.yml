@@ -9,7 +9,7 @@ body:
         Thanks for your contribution to improve this project!
 # "Severity"
   - type: dropdown
-      id: frequency
+      id: frequenciii
       attributes:
         label: How frequently does the bug occur?
         options:
