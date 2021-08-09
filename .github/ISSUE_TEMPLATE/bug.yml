@@ -101,7 +101,6 @@ body:
       description: What Client OS and version are you seeing the issue on?
     validations:
       required: true
-
 # Java specific variant
 - type: input
     id: build-environment
