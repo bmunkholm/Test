@@ -63,6 +63,7 @@ body:
         Ideally, please provide a self contained test case or link (e.g. github repo) to a sample app that demonstrates the bug.
         If that's not possible, please show code samples that highlights or reproduce the issue.
         If relevant, include your model definitions.
+        Should you need to share code confidentially, you can send a link to: realm-help (the @) mongodb.com.
   - type: textarea
     id: repro-steps
     attributes:
@@ -81,7 +82,7 @@ body:
     id: version
     attributes:
       label: Version
-      description: What version(s) of the SDK has the bug appeared in?
+      description: What version(s) of the SDK has the bug been observed in?
     validations:
       required: true
   - type: dropdown
@@ -95,52 +96,66 @@ body:
       required: true
 # Environment
   - type: input
-    id: client-platforms
+    id: platform
     attributes:
-      label: Client OS and version
-      description: What Client OS and version are you seeing the issue on?
+      label: Platform OS and version(s)
+      description: OS and version(s) are you seeing the issue on?
     validations:
       required: true
-# Java specific variant
+# .NET: Is both Client and Host OS version required? Or is "Platform OS" enough?
+#
+# -------------------------------------------------------------------
+# Java specific environment variant
   - type: textarea
-    id: build-environment
+    id: java-build-environment
     attributes:
-      label: Build environment
+      label: "JAVA: Build environment"
       description: Build environment versions
       value: |
         Android Studio version: ...
         Android Build Tools version: ...
         Gradle version: ...
     validations:
-      required: false
+# ? Should it be required?
+      required: true
+
+# Cocoa specific environment variant
   - type: textarea
-    id: build-environment2
+    id: cocoa-build-environment
     attributes:
-      label: Build environment2
-      description: Build environment versions
-      placeholder: |
-        Android Studio version: ...
-        Android Build Tools version: ...
-        Gradle version: ...
+      label: "COCOA: Build environment"
+      description: |
+        Build environment versions
+        In the [CONTRIBUTING guidelines](https://github.com/realm/realm-cocoa/blob/master/CONTRIBUTING.md#speeding-things-up-runner), you will find a script,
+which will help determining some of these versions.
+ # ? Is the script still correct and useful? It seems to output more than needed?
+      value: |
+        Xcode version: ...
+        Dependency manager and version: ...
     validations:
-      required: false
+      required: true
+
+# JS specific environment variant
+  - type: textarea
+    id: JS-build-environment
+    attributes:
+      label: "JS: Build environment"
+      description: Build environment versions
+      value: |
+        Which debugger for React Native: ...
+    validations:
+      required: true
+
 # .NET only
   - type: dropdown
     id: app-type
     attributes:
-      label: What type of application is this?
+      label: ".NET:  What type of application is this?""
       options:
         - Unity
         - Xamarin
         - WPF
         - Console/Server
         - Other
-    validations:
-      required: true
-  - type: input
-    id: host-platforms
-    attributes:
-      label: Host OS and version
-      description: What Host OS and version are you seeing the issue on?
     validations:
       required: true
