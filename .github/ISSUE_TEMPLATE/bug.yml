@@ -141,7 +141,7 @@ body:
       label: "JS: Build environment"
       description: Build environment versions
       value: |
-        Which debugger for React Native: ...
+        Which debugger for React Native: ... (if that's the only info needed we can make a dropdown box with options)
     validations:
       required: true
 
