@@ -128,7 +128,7 @@ body:
         Build environment versions
         In the [CONTRIBUTING guidelines](https://github.com/realm/realm-cocoa/blob/master/CONTRIBUTING.md#speeding-things-up-runner), you will find a script,
 which will help determining some of these versions.
- # ? Is the script still correct and useful? It seems to output more than needed?
+# ? Is the script still correct and useful? It seems to output more than needed?
       value: |
         Xcode version: ...
         Dependency manager and version: ...
