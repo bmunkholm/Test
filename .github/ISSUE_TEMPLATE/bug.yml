@@ -7,7 +7,7 @@ body:
       value: |
         Please provide as much detail as you can so we have a better chance of fixing the bug quickly. 
         Thanks for your contribution to improve this project!
-# "Severity"
+# "Severity":
   - type: dropdown
     id: frequency
     attributes:
