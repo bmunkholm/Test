@@ -114,9 +114,9 @@ body:
     validations:
       required: false
   - type: input
-    id: build-environment
+    id: build-environment2
     attributes:
-      label: Build environment
+      label: Build environment2
       description: Build environment versions
       placeholder: |
         Android Studio version: ...
