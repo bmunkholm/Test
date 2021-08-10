@@ -102,7 +102,7 @@ body:
     validations:
       required: true
 # Java specific variant
-  - type: input
+  - type: textarea
     id: build-environment
     attributes:
       label: Build environment
@@ -113,7 +113,7 @@ body:
         Gradle version: ...
     validations:
       required: false
-  - type: input
+  - type: textarea
     id: build-environment2
     attributes:
       label: Build environment2
