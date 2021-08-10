@@ -113,6 +113,17 @@ body:
         Gradle version: ...
     validations:
       required: false
+  - type: input
+    id: build-environment
+    attributes:
+      label: Build environment
+      description: Build environment versions
+      placeholder: |
+        Android Studio version: ...
+        Android Build Tools version: ...
+        Gradle version: ...
+    validations:
+      required: false
 # .NET only
   - type: dropdown
     id: app-type
