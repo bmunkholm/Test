@@ -17,7 +17,7 @@ body:
     id: solution
     attributes:
       label: Solution
-      description: Describe the solution you envision
+      description: Describe the solution you envision, including API and usage example if possible.
     validations:
       required: false
   - type: textarea
