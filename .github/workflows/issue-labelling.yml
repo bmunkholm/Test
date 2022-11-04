@@ -20,4 +20,5 @@ jobs:
         with:
           issue-form: ${{ steps.issue-parser.outputs.jsonString }}
           section: frequency
+          block-list: [ 'None' ]
           token: ${{ secrets.GITHUB_TOKEN }}
