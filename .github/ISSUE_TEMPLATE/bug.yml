@@ -16,7 +16,7 @@ body:
         - Sometimes
         - All-the-time
     validations:
-      required: true
+      required: false
 # Description
   - type: textarea
     id: description
@@ -25,7 +25,7 @@ body:
       description: |
         Describe what you were expecting and what actually happened.
     validations:
-      required: true
+      required: false
   - type: textarea
     id: stacktrace
     attributes:
@@ -42,7 +42,7 @@ body:
         - Yes, sometimes
         - Not yet
     validations:
-      required: true 
+      required: false
   - type: textarea
     id: code-snippets
     attributes:
@@ -60,7 +60,7 @@ body:
       label: Version
       description: What version(s) of the SDK has the bug been observed in?
     validations:
-      required: true
+      required: false
   - type: dropdown
     id: sync
     attributes:
@@ -69,7 +69,7 @@ body:
         - Local Database only
         - MongoDB Realm (i.e. Sync, auth, functions)
     validations:
-      required: true
+      required: false
 # Environment
   - type: input
     id: platform
@@ -77,7 +77,7 @@ body:
       label: Platform OS and version(s)
       description: OS and version(s) are you seeing the issue on?
     validations:
-      required: true
+      required: false
 
 # Java specific environment variant
   - type: textarea
@@ -130,4 +130,4 @@ body:
         - Console/Server
         - Other
     validations:
-      required: true
+      required: false
