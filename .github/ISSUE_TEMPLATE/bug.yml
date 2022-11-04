@@ -12,9 +12,9 @@ body:
     attributes:
       label: How frequently does the bug occur?
       options:
-        - Seen once
+        - Seen-once
         - Sometimes
-        - All the time
+        - All-the-time
     validations:
       required: true
 # Description
