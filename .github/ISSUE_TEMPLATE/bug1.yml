@@ -9,7 +9,6 @@ body:
     description: Please choose the severity of the impact of this issue.
     multiple: false
     options:
-      - 'None'
       - 'Low'
       - 'Medium'
       - 'High'
