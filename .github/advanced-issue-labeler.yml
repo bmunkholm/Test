@@ -32,9 +32,11 @@ policy:
           - name: 'SDK:Flavour:Sync' 
             keys: ['Atlas Device Sync']
           - name: 'SDK:Flavour:Services'
-            keys: ['Atlas App Services (auth, functions, etc.)',
-                   'MongoDB Atlas (i.e. Sync, auth, functions)',
-                   'MongoDB Realm (i.e. Sync, auth, functions)']
+            keys: [
+              'Atlas App Services (auth, functions, etc.)',
+              'MongoDB Atlas (i.e. Sync, auth, functions)',
+              'MongoDB Realm (i.e. Sync, auth, functions)'
+              ]
 
       - id: [encryption]
         block-list: []
