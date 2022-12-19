@@ -43,13 +43,13 @@ body:
         - Atlas_Device_Sync
         - MongoDB_Realm
 
-   - type: dropdown
-     id: encryption
-     attributes:
-       label: Are you using encryption?
-       options:
-         - Yes_using_encryption
-         - No_not_using_encryption
+  - type: dropdown
+    id: encryption
+    attributes:
+      label: Are you using encryption?
+      options:
+        - Yes_using_encryption
+        - No_not_using_encryption
 
 # .NET only
   - type: dropdown
