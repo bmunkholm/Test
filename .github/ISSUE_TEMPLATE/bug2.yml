@@ -12,7 +12,6 @@ body:
         - All_the_time
     validations:
       required: false
-
   - type: dropdown
     id: repro
     attributes:
