@@ -2,7 +2,7 @@
 ---
 
 policy:
-  - template: [bug-freq.yml]
+  - template: [bug.yml]
     section:
       - id: [frequency]
         block-list: []
