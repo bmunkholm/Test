@@ -1,16 +1,12 @@
 name: Bug Freq Report
 description: Report a bug w Freq
-labels: [T-Bug]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Please provide as much detail as you can so we have a better chance of fixing the bug quickly. 
-        Thanks for your contribution to improve this project!
-  - type: dropdown
+   - type: dropdown
     id: frequency
     attributes:
-      label: Freq
+      label: How often?
+      description: Hi
+      multiple: false
       options:
         - Seen-once
         - Sometimes
