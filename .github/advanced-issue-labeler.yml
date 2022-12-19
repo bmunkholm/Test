@@ -42,6 +42,6 @@ policy:
         block-list: []
         label:
           - name: 'Encryption:On'
-            keys: ['Yes_using_encryption']
+            keys: ['Yes']
           - name: 'Encryption:Off'
-            keys: ['No_not_using_encryption']
+            keys: ['No']
