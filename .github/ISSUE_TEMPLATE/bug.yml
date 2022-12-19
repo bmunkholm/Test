@@ -44,7 +44,7 @@ body:
         - Atlas_Device_Sync
         - MongoDB_Realm
 
-  - type: dropbox
+  - type: dropdown
     id: encryption
     attributes:
       label: Are you using Encryption?
