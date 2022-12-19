@@ -7,9 +7,9 @@ body:
     attributes:
       label: How frequently does the bug occur?
       options:
-        - Seen once
+        - Seen_once
         - Sometimes
-        - All the time
+        - All_the_time
     validations:
       required: false
 
@@ -18,9 +18,9 @@ body:
     attributes:
       label: Can you reproduce the bug?
       options:
-        - Yes, always
-        - Yes, sometimes
-        - Not yet
+        - Yes_always
+        - Yes_sometimes
+        - Not_yet
     validations:
       required: false
   
@@ -29,9 +29,9 @@ body:
     attributes:
       label: What SDK Sync flavour are you using?
       options:
-        - Local Database only
-        - Atlas Device Sync
-        - Atlas App Services (auth, functions, etc.)
+        - Local_Database_only
+        - Atlas_Device_Sync
+        - Atlas_App_Services #_(auth, functions, etc.)
     validations:
       required: false
 
@@ -40,9 +40,17 @@ body:
     attributes:
       label: What SDK flavour are you using?
       options:
-        - Local Database only
-        - Atlas Device Sync
-        - MongoDB Realm (i.e. Sync, auth, functions)
+        - Local_Database_only
+        - Atlas_Device_Sync
+        - MongoDB_Realm #(i.e. Sync, auth, functions)
+
+   - type: dropdown
+     id: encryption
+     attributes:
+       label: Are you using encryption?
+       options:
+         - Yes_using_encryption
+         - No_not_using_encryption
 
 # .NET only
   - type: dropdown
