@@ -43,10 +43,3 @@ policy:
             keys: ['Yes, using encryption']
           - name: 'Encryption:Off'
             keys: ['No, not using encryption']
-
-      # .NET: app-type
-      #  - Unity
-      #  - Xamarin
-      #  - WPF
-      #  - Console/Server
-      #  - Other
