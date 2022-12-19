@@ -49,8 +49,8 @@ body:
     attributes:
       label: Are you using Encryption?
       options:
-        - Yes
-        - No
+        - 'Yes'
+        - 'No'
 
 # .NET only
   - type: dropdown
