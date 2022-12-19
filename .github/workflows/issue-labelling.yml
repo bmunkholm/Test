@@ -1,3 +1,5 @@
+# Works great
+
 name: Issue labeler
 on:
   issues:
@@ -20,6 +22,6 @@ jobs:
         with:
           issue-form: ${{ steps.issue-parser.outputs.jsonString }}
           section: frequency
-          block-list: |
-            Other
+#          block-list: |
+#            Other
           token: ${{ secrets.GITHUB_TOKEN }}
