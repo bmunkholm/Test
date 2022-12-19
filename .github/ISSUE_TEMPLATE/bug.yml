@@ -1,1 +1,59 @@
+name: Bug Report
+description: Report a bug
+labels: [T-Bug]
+body:
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How frequently does the bug occur?
+      options:
+        - Seen once
+        - Sometimes
+        - All the time
+    validations:
+      required: false
 
+  - type: dropdown
+    id: repro
+    attributes:
+      label: Can you reproduce the bug?
+      options:
+        - Yes, always
+        - Yes, sometimes
+        - Not yet
+    validations:
+      required: false
+  
+  - type: dropdown
+    id: sync
+    attributes:
+      label: What SDK Sync flavour are you using?
+      options:
+        - Local Database only
+        - Atlas Device Sync
+        - Atlas App Services (auth, functions, etc.)
+    validations:
+      required: false
+
+  - type: dropdown
+    id: flavour
+    attributes:
+      label: What SDK flavour are you using?
+      options:
+        - Local Database only
+        - Atlas Device Sync
+        - MongoDB Realm (i.e. Sync, auth, functions)
+
+# .NET only
+  - type: dropdown
+    id: app-type
+    attributes:
+      label: ".NET:  What type of application is this?"
+      options:
+        - Unity
+        - Xamarin
+        - WPF
+        - Console/Server
+        - Other
+    validations:
+      required: false
