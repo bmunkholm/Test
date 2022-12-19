@@ -24,6 +24,7 @@ body:
         - Not yet
     validations:
       required: false
+
   - type: textarea
     id: code-snippets
     attributes:
