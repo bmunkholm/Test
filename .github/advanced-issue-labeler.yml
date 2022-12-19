@@ -15,7 +15,7 @@ policy:
             keys: ['All the time']
 
       - id: [repro]
-       block-list: []
+        block-list: []
         label:
           - name: 'Repro:Always'
             keys: ['Yes, always']
