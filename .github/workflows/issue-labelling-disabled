@@ -1,10 +1,10 @@
-name: Issue labeler
+name: Issue labeler disabled
 on:
   issues:
     types: [ opened ]
 
 jobs:
-  label-issues-policy:
+  label-issues-policy-disabled:
     runs-on: ubuntu-latest    
     permissions:
       issues: write
