@@ -1,0 +1,15 @@
+# syntax - https://github.com/redhat-plumbers-in-action/advanced-issue-labeler#policy
+---
+
+policy:
+  - template: [bug-freq.yml]
+    section:
+      - id: [frequency]
+        block-list: []
+        label:
+          - name: 'Frequency: Once'
+            keys: ['Seen once']
+          - name: 'Frequency: Sometimes'
+            keys: ['Sometimes']
+          - name: 'Frequency: Allways'
+            keys: ['All the time']
