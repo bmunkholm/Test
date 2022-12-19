@@ -12,9 +12,9 @@ body:
     attributes:
       label: How frequently does the bug occur?
       options:
-        - Seen-once
+        - Seen once
         - Sometimes
-        - All-the-time
+        - All the time
     validations:
       required: false
 # Description
@@ -67,6 +67,8 @@ body:
       label: What SDK flavour are you using?
       options:
         - Local Database only
+        - Atlas Device Sync
+        - Atlas App Services (auth, functions, etc.)
         - MongoDB Realm (i.e. Sync, auth, functions)
     validations:
       required: false

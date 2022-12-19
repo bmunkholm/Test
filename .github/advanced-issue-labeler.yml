@@ -7,9 +7,46 @@ policy:
       - id: [frequency]
         block-list: []
         label:
-          - name: 'Frequency: Once'
+          - name: 'Frequency:Once'
             keys: ['Seen once']
-          - name: 'Frequency: Sometimes'
+          - name: 'Frequency:Sometimes'
             keys: ['Sometimes']
-          - name: 'Frequency: Allways'
+          - name: 'Frequency:Allways'
             keys: ['All the time']
+
+      - id: [repro]
+       block-list: []
+        label:
+          - name: 'Repro:Always'
+            keys: ['Yes, always']
+          - name: 'Repro:Sometimes'
+            keys: ['Yes, sometimes']
+          - name: 'Repro:No'
+            keys: ['Not yet']
+
+      - id: [sync, flavour]
+        block-list: []
+        label:
+          - name: 'SDK-Flavour:Local'
+            keys: [Local Database only']
+          - name: 'SDK:Flavour:Sync' 
+            keys: ['Atlas Device Sync']
+          - name: 'SDK:Flavour:Services'
+            keys: ['Atlas App Services (auth, functions, etc.)',
+                   'MongoDB Atlas (i.e. Sync, auth, functions)',
+                   'MongoDB Realm (i.e. Sync, auth, functions)']
+
+      - id: [encryption]
+        block-list: []
+        label:
+          - name: 'Encryption:On'
+            keys: ['Yes, using encryption']
+          - name: 'Encryption:Off'
+            keys: ['No, not using encryption']
+
+      # .NET: app-type
+      #  - Unity
+      #  - Xamarin
+      #  - WPF
+      #  - Console/Server
+      #  - Other

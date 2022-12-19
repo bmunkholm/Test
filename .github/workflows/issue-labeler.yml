@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        template: [ bug-freq.yml ]
+        template: [ bug.yml ]
 
     steps:
       - uses: actions/checkout@v3
