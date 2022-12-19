@@ -2,18 +2,18 @@ name: Bug Report1
 description: Report a bug 1
 labels: [T-Bug]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Please provide as much detail as you can so we have a better chance of fixing the bug quickly. 
-        Thanks for your contribution to improve this project!
-  - type: dropdown
-    id: frequency
-    attributes:
-      label: How frequently does the bug occur?
-      options:
-        - Seen-once
-        - Sometimes
-        - All-the-time
-    validations:
-      required: true
+- type: dropdown
+  id: severity
+  attributes:
+    label: Severity impact
+    description: Please choose the severity of the impact of this issue.
+    multiple: false
+    options:
+      - 'None'
+      - 'Low'
+      - 'Medium'
+      - 'High'
+      - 'Urgent'
+      - 'Other'
+  validations:
+    required: true
