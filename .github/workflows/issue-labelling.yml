@@ -4,8 +4,15 @@ on:
     types: [ opened ]
 
 jobs:
-  label-component:
-    runs-on: ubuntu-latest
+  label-issues-policy:
+    runs-on: ubuntu-latest    
+    permissions:
+      issues: write
+
+    strategy:
+      matrix:
+        template: [ bug.yml, feature.yml ]
+
     steps:
       - uses: actions/checkout@v3
 
@@ -13,13 +20,11 @@ jobs:
         uses: stefanbuck/github-issue-parser@v2
         id: issue-parser
         with:
-          template-path: .github/ISSUE_TEMPLATE/bug3.yml
+          template-path: .github/ISSUE_TEMPLATE/${{ matrix.template }}
 
-      - name: Set labels based on severity field
+      - name: Set labels based on policy
         uses: redhat-plumbers-in-action/advanced-issue-labeler@v2
         with:
           issue-form: ${{ steps.issue-parser.outputs.jsonString }}
-          section: severity
-          block-list: |
-            Other
+          template: ${{ matrix.template }}
           token: ${{ secrets.GITHUB_TOKEN }}
