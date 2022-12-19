@@ -34,7 +34,7 @@ policy:
           - name: 'SDK-Flavour:Services'
             keys: [
               'Atlas_App_Services', #  (auth, functions, etc.)',
-              'MongoDB_Atlas' #  (i.e. Sync, auth, functions)',
+              'MongoDB_Atlas', #  (i.e. Sync, auth, functions)',
               'MongoDB_Realm' # (i.e. Sync, auth, functions)'
               ]
 
