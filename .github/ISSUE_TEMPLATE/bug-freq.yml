@@ -8,8 +8,8 @@ body:
       description: Hi
       multiple: false
       options:
-        - Seen-once
+        - Seen once
         - Sometimes
-        - All-the-time
+        - All the time
     validations:
       required: false
