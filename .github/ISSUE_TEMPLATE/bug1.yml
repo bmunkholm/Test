@@ -1,5 +1,5 @@
 name: Bug Report1
-description: Report a bug
+description: Report a bug 1
 labels: [T-Bug]
 body:
   - type: markdown
