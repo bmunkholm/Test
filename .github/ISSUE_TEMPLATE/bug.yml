@@ -44,6 +44,14 @@ body:
         - Atlas_Device_Sync
         - MongoDB_Realm
 
+  - type: dropbox
+    id: encryption
+    attributes:
+      label: Are you using Encryption?
+      options:
+        - Yes
+        - No
+
 # .NET only
   - type: dropdown
     id: app-type
