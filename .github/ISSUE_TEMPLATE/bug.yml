@@ -13,7 +13,6 @@ body:
     validations:
       required: false
 
-# Repro information
   - type: dropdown
     id: repro
     attributes:
@@ -22,25 +21,6 @@ body:
         - Yes, always
         - Yes, sometimes
         - Not yet
-    validations:
-      required: false
-
-  - type: textarea
-    id: code-snippets
-    attributes:
-      label: Reproduction Steps
-      description: |
-        If you can reproduce the bug, please provide detailed steps for how WE can reproduce it.
-        Ideally, please provide a self contained test case or link (e.g. github repo) to a sample app that demonstrates the bug.
-        If that's not possible, please show code samples that highlights or reproduce the issue.
-        If relevant, include your model definitions.
-        Should you need to share code confidentially, you can send a link to: realm-help (the @) mongodb.com.
-# Version
-  - type: input
-    id: version
-    attributes:
-      label: Version
-      description: What version(s) of the SDK has the bug been observed in?
     validations:
       required: false
   
@@ -63,54 +43,6 @@ body:
         - Local Database only
         - Atlas Device Sync
         - MongoDB Realm (i.e. Sync, auth, functions)
-
-# Environment
-  - type: input
-    id: platform
-    attributes:
-      label: Platform OS and version(s)
-      description: OS and version(s) are you seeing the issue on?
-    validations:
-      required: false
-
-# Java specific environment variant
-  - type: textarea
-    id: java-build-environment
-    attributes:
-      label: "JAVA: Build environment"
-      description: Build environment versions
-      value: |
-        Android Studio version: ...
-        Android Build Tools version: ...
-        Gradle version: ...
-    validations:
-      required: false
-
-# Cocoa specific environment variant
-  - type: textarea
-    id: cocoa-build-environment
-    attributes:
-      label: "COCOA: Build environment"
-      description: |
-        Build environment versions
-        In the [CONTRIBUTING guidelines](https://github.com/realm/realm-cocoa/blob/master/CONTRIBUTING.md#speeding-things-up-runner), you will find a script, which will help determining some of these versions.
- # ? Is the script still correct and useful? It seems to output more than needed?
-      value: |
-        Xcode version: ...
-        Dependency manager and version: ...
-    validations:
-      required: false
-
-# JS specific environment variant
-  - type: textarea
-    id: JS-build-environment
-    attributes:
-      label: "JS: Build environment"
-      description: Build environment versions
-      value: |
-        Which debugger for React Native: ... (if that's the only info needed we can make a dropdown box with options)
-    validations:
-      required: false
 
 # .NET only
   - type: dropdown
