@@ -1,11 +1,11 @@
 name: Bug Report1
-description: Report a bug 1
+description: Report a bug 2 - With multi word label "How severe is it?"
 labels: [T-Bug]
 body:
 - type: dropdown
   id: severity
   attributes:
-    label: severity
+    label: How severe is it?
     description: Please choose the severity of the impact of this issue.
     multiple: false
     options:
