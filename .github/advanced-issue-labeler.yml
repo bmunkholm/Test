@@ -2,7 +2,7 @@
 ---
 
 policy:
-  - template: [bug.yml]
+  - template: [bug-freq.yml]
     section:
       - id: [frequency]
         block-list: ['None']
@@ -11,13 +11,3 @@ policy:
             keys: ['Frequency: Once']
           - name: 'Sometimes'
             keys: ['Frequency: Sometimes']
-
-  - section:
-      - id: [type]
-        block-list: ['Other']
-        label:
-          - name: 'bug 🐛'
-            keys: ['Bug Report']
-
-          - name: 'RFE 🎁'
-            keys: ['Feature Request']
