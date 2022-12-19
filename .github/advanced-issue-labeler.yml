@@ -1,0 +1,23 @@
+# syntax - https://github.com/redhat-plumbers-in-action/advanced-issue-labeler#policy
+---
+
+policy:
+  - template: [bug.yml, feature.yml]
+    section:
+      - id: [frequency]
+        block-list: ['None']
+        label:
+          - name: 'Seen-once'
+            keys: ['Frequency: Once']
+          - name: 'Sometimes'
+            keys: ['Frequency: Sometimes']
+
+  - section:
+      - id: [type]
+        block-list: ['Other']
+        label:
+          - name: 'bug 🐛'
+            keys: ['Bug Report']
+
+          - name: 'RFE 🎁'
+            keys: ['Feature Request']
