@@ -1,7 +1,7 @@
 name: Bug Freq Report
 description: Report a bug w Freq
 body:
-- type: dropdown
+  - type: dropdown
     id: frequency
     attributes:
       label: How often?
