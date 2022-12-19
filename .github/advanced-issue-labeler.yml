@@ -2,7 +2,7 @@
 ---
 
 policy:
-  - template: [bug.yml, feature.yml]
+  - template: [bug.yml]
     section:
       - id: [frequency]
         block-list: ['None']
