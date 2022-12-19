@@ -1,0 +1,18 @@
+name: Bug Report2
+description: Report a bug 2 - With matching label "Severity"
+labels: [T-Bug]
+body:
+- type: dropdown
+  id: severity
+  attributes:
+    label: Severity
+    description: Please choose the severity of the impact of this issue.
+    multiple: false
+    options:
+      - 'Low'
+      - 'Medium'
+      - 'High'
+      - 'Urgent'
+      - 'Other'
+  validations:
+    required: true
