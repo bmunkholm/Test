@@ -21,6 +21,5 @@ jobs:
           issue-form: ${{ steps.issue-parser.outputs.jsonString }}
           section: severity
           block-list: |
-            None
             Other
           token: ${{ secrets.GITHUB_TOKEN }}
