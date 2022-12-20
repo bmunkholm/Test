@@ -8,8 +8,9 @@ body:
       description: Hi
       multiple: false
       options:
+        - Choose!
         - Seen once
         - Sometimes
         - All the time
     validations:
-      required: false
+      required: true
