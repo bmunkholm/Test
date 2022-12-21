@@ -38,4 +38,15 @@ body:
         - I'd like to see it but have a workaround
         - Fairly niche but nice to have anyway
     validations:
-      required: false
+      required: true
+  - type: dropdown
+    id: sync
+    attributes:
+      label: Feature would mainly be used with
+      options:
+        - -- select --
+        - Local Database only
+        - Atlas Device Sync
+        - 'Atlas App Services: Auth or Functions etc'
+    validations:
+      required: true
