@@ -8,34 +8,34 @@ policy:
         block-list: []
         label:
           - name: 'Frequency:Once'
-            keys: ['Seen_once']
+            keys: ['Once']
           - name: 'Frequency:Sometimes'
             keys: ['Sometimes']
           - name: 'Frequency:Allways'
-            keys: ['All_the_time']
+            keys: ['Allways']
 
       - id: [repro]
         block-list: []
         label:
           - name: 'Repro:Always'
-            keys: ['Yes_always']
+            keys: ['Always']
           - name: 'Repro:Sometimes'
-            keys: ['Yes_sometimes']
+            keys: ['Sometimes']
           - name: 'Repro:No'
-            keys: ['Not_yet']
+            keys: ['No']
 
       - id: [sync, flavour]
         block-list: []
         label:
-          - name: 'SDK-Flavour:Local'
-            keys: [Local_Database_only']
-          - name: 'SDK-Flavour:Sync' 
-            keys: ['Atlas_Device_Sync']
-          - name: 'SDK-Flavour:Services'
+          - name: 'SDK-Use:Local'
+            keys: [Local Database only']
+          - name: 'SDK-Use:Sync' 
+            keys: ['Atlas Device Sync']
+          - name: 'SDK-Use:Services'
             keys: [
-              'Atlas_App_Services', #  (auth, functions, etc.)',
-              'MongoDB_Atlas', #  (i.e. Sync, auth, functions)',
-              'MongoDB_Realm' # (i.e. Sync, auth, functions)'
+              'Atlas App Services', #  (auth, functions, etc.)',
+              'MongoDB Atlas', #  (i.e. Sync, auth, functions)',
+              'MongoDB Realm' # (i.e. Sync, auth, functions)'
               ]
 
       - id: [encryption]
