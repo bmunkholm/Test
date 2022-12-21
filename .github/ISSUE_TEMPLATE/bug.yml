@@ -20,9 +20,9 @@ body:
       options:
         - Always
         - Sometimes
-        - No
+        - 'No'
     validations:
-      required: true
+      required: false
   
   - type: dropdown
     id: sync
