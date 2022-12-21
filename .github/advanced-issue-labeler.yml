@@ -26,7 +26,7 @@ policy:
         block-list: []
         label:
           - name: 'SDK-Use:Local'
-            keys: [Local Database only']
+            keys: ['Local Database only']
           - name: 'SDK-Use:Sync' 
             keys: ['Atlas Device Sync']
           - name: 'SDK-Use:Services'
