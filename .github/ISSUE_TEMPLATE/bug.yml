@@ -22,7 +22,7 @@ body:
         - Sometimes
         - 'No'
     validations:
-      required: false
+      required: true
   
   - type: dropdown
     id: sync
