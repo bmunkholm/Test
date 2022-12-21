@@ -45,26 +45,25 @@ policy:
       - id: [app-type]
         block-list: []
         label:
-         - name: 'App-type:Unity'
-           keys: ['Unity']
-         - name: 'App-type:Xamarin'
-           keys: ['Xamarin']
-         - name: 'App-type:WPF'
-           keys: ['WPF']
-         - name: 'App-type:Console/Server'
-           keys: ['Console/Server']
-         - name: 'App-type:Other'
-           keys: ['Other']
+          - name: 'App-type:Unity'
+            keys: ['Unity']
+          - name: 'App-type:Xamarin'
+            keys: ['Xamarin']
+          - name: 'App-type:WPF'
+            keys: ['WPF']
+          - name: 'App-type:Console/Server'
+            keys: ['Console/Server']
+          - name: 'App-type:Other'
+            keys: ['Other']
            
       - id: [importance]
         block-list: []
         label:
-         - name: 'Importance:Dealbraker'
-           keys: ['Dealbraker']
-         - name: 'Importance:Dealbraker'
-           keys: ['Would be a major improvement']
-         - name: 'Importance:Workaround'
-           keys: ['I'd like to see it but have a workaround']
-         - name: 'Importance:Nice'
-           keys: ['Fairly niche but nice to have anyway']  
-         
+          - name: 'Importance:Dealbraker'
+            keys: ['Dealbraker']
+          - name: 'Importance:Dealbraker'
+            keys: ['Would be a major improvement']
+          - name: 'Importance:Workaround'
+            keys: ['I'd like to see it but have a workaround']
+          - name: 'Importance:Nice'
+            keys: ['Fairly niche but nice to have anyway']  
