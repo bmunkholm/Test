@@ -7,42 +7,42 @@ body:
     attributes:
       label: How frequently does the bug occur?
       options:
-        - Seen_once
+        - Once
         - Sometimes
-        - All_the_time
+        - Allways
     validations:
-      required: false
+      required: true
 
   - type: dropdown
     id: repro
     attributes:
       label: Can you reproduce the bug?
       options:
-        - Yes_always
-        - Yes_sometimes
-        - Not_yet
+        - Always
+        - Sometimes
+        - No
     validations:
-      required: false
+      required: true
   
   - type: dropdown
     id: sync
     attributes:
       label: What SDK Sync flavour are you using?
       options:
-        - Local_Database_only
-        - Atlas_Device_Sync
-        - Atlas_App_Services
+        - Local Database only
+        - Atlas Device Sync
+        - Atlas App Services
     validations:
-      required: false
+      required: true
 
   - type: dropdown
     id: flavour
     attributes:
       label: What SDK flavour are you using?
       options:
-        - Local_Database_only
-        - Atlas_Device_Sync
-        - MongoDB_Realm
+        - Local Database only
+        - Atlas Device Sync
+        - MongoDB Realm
 
   - type: dropdown
     id: encryption
