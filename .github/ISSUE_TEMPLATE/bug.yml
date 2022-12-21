@@ -31,7 +31,7 @@ body:
       options:
         - Local Database only
         - Atlas Device Sync
-        - 'Atlas App Services auth, functions, etc'
+        - 'Atlas App Services auth functions etc'
 
 #        - Atlas App Services
 
@@ -45,7 +45,7 @@ body:
       options:
         - Local Database only
         - Atlas Device Sync
-        - 'MongoDB Realm (i.e. Sync, auth, functions)'
+        - 'MongoDB Realm (i.e. Sync auth functions)'
         # - MongoDB Realm
 
   - type: dropdown
