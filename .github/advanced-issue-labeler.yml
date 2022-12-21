@@ -2,7 +2,7 @@
 ---
 
 policy:
-  - template: [bug.yml]
+  - template: [bug.yml, feature.yml]
     section:
       - id: [frequency]
         label:
@@ -22,7 +22,7 @@ policy:
           - name: 'Repro:No'
             keys: ['No']
 
-      - id: [sync, flavour]
+      - id: [sync, flavour, services]
         block-list: []
         label:
           - name: 'SDK-Use:Local'
@@ -30,11 +30,9 @@ policy:
           - name: 'SDK-Use:Sync' 
             keys: ['Atlas Device Sync']
           - name: 'SDK-Use:Services'
-            keys: [
-              'Atlas App Services auth functions etc',
-              'MongoDB Atlas (Sync or auth or functions)',
-              'MongoDB Realm i.e. Sync auth functions'
-              ]
+            keys: ['Atlas App Services: Auth or Functions etc']
+          - name: ['SDK-Use:All']
+            keys: ['Both Atlas Device Sync and Atlas App Services']
 
       - id: [encryption]
         block-list: []
@@ -57,3 +55,16 @@ policy:
            keys: ['Console/Server']
          - name: 'App-type:Other'
            keys: ['Other']
+           
+      - id: [importance]
+        block-list: []
+        label:
+         - name: 'Importance:Dealbraker'
+           keys: ['Dealbraker']
+         - name: 'Importance:Dealbraker'
+           keys: ['Would be a major improvement']
+         - name: 'Importance:Workaround'
+           keys: ['I'd like to see it but have a workaround']
+         - name: 'Importance:Nice'
+           keys: ['Fairly niche but nice to have anyway']  
+         
