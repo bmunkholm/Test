@@ -11,7 +11,7 @@ body:
         - Sometimes
         - Allways
     validations:
-      required: true
+      required: false
 
   - type: dropdown
     id: repro
