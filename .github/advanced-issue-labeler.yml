@@ -31,7 +31,7 @@ policy:
             keys: ['Atlas Device Sync']
           - name: 'SDK-Use:Services'
             keys: [
-              'Atlas App Services (auth functions etc)',
+              'Atlas App Services (auth, functions, etc)',
               'MongoDB Atlas (Sync or auth or functions)',
               'MongoDB Realm (i.e. Sync auth functions)'
               ]
@@ -45,6 +45,7 @@ policy:
             keys: ['No']
             
        - id: [app-type]
+         block-list: []
          label:
           - name: 'App-type:Unity'
             keys: ['Unity']
