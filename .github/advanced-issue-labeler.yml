@@ -5,7 +5,6 @@ policy:
   - template: [bug.yml]
     section:
       - id: [frequency]
-        block-list: []
         label:
           - name: 'Frequency:Once'
             keys: ['Once']
@@ -15,7 +14,6 @@ policy:
             keys: ['Allways']
 
       - id: [repro]
-        block-list: []
         label:
           - name: 'Repro:Always'
             keys: ['Always']
@@ -33,9 +31,9 @@ policy:
             keys: ['Atlas Device Sync']
           - name: 'SDK-Use:Services'
             keys: [
-              'Atlas App Services', #  (auth, functions, etc.)',
-              'MongoDB Atlas', #  (i.e. Sync, auth, functions)',
-              'MongoDB Realm' # (i.e. Sync, auth, functions)'
+              'Atlas App Services (auth, functions, etc.)',
+              'MongoDB Atlas (Sync or auth or functions)',
+              'MongoDB Realm (i.e. Sync, auth, functions)'
               ]
 
       - id: [encryption]
@@ -45,3 +43,16 @@ policy:
             keys: ['Yes']
           - name: 'Encryption:Off'
             keys: ['No']
+            
+       - id: [app-type]
+         label:
+          - name: 'App-type:Unity'
+            keys: ['Unity']
+          - name: 'App-type:Xamarin'
+            keys: ['Xamarin']
+          - name: 'App-type:WPF'
+            keys: ['WPF']
+          - name: 'App-type:Console/Server'
+            keys: ['Console/Server']
+          - name: 'App-type:Other'
+            keys: ['Other']
