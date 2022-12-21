@@ -44,16 +44,16 @@ policy:
           - name: 'Encryption:Off'
             keys: ['No']
             
-       - id: [app-type]
-         block-list: []
-         label:
-          - name: 'App-type:Unity'
-            keys: ['Unity']
-          - name: 'App-type:Xamarin'
-            keys: ['Xamarin']
-          - name: 'App-type:WPF'
-            keys: ['WPF']
-          - name: 'App-type:Console/Server'
-            keys: ['Console/Server']
-          - name: 'App-type:Other'
-            keys: ['Other']
+      - id: [app-type]
+        block-list: []
+        label:
+         - name: 'App-type:Unity'
+           keys: ['Unity']
+         - name: 'App-type:Xamarin'
+           keys: ['Xamarin']
+         - name: 'App-type:WPF'
+           keys: ['WPF']
+         - name: 'App-type:Console/Server'
+           keys: ['Console/Server']
+         - name: 'App-type:Other'
+           keys: ['Other']
