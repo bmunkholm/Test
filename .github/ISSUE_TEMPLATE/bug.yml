@@ -31,7 +31,10 @@ body:
       options:
         - Local Database only
         - Atlas Device Sync
-        - Atlas App Services
+        - 'Atlas App Services (auth, functions, etc.)'
+
+#        - Atlas App Services
+
     validations:
       required: true
 
@@ -42,7 +45,8 @@ body:
       options:
         - Local Database only
         - Atlas Device Sync
-        - MongoDB Realm
+        - 'MongoDB Realm (i.e. Sync, auth, functions)'
+        # - MongoDB Realm
 
   - type: dropdown
     id: encryption
