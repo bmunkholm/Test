@@ -33,7 +33,7 @@ policy:
             keys: [
               'Atlas App Services auth functions etc',
               'MongoDB Atlas (Sync or auth or functions)',
-              'MongoDB Realm (i.e. Sync auth functions)'
+              'MongoDB Realm i.e. Sync auth functions'
               ]
 
       - id: [encryption]
