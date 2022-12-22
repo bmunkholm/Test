@@ -61,8 +61,8 @@ policy:
         block-list: []
         label:
           - name: 'Importance:Dealbraker'
-            keys: ['Dealbraker']
-          - name: 'Importance:Dealbraker'
+            keys: ['Dealbreaker']
+          - name: 'Importance:Major'
             keys: ['Would be a major improvement']
           - name: 'Importance:Workaround'
             keys: ['I would like to have it but have a workaround']
