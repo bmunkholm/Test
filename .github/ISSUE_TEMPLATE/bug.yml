@@ -2,7 +2,7 @@ name: Bug Report
 description: Report a bug
 labels: [T-Bug]
 body:
-  - type: dropdown
+  - type: checkboxes
     id: frequency
     attributes:
       label: How frequently does the bug occur?
@@ -10,7 +10,7 @@ body:
         - -- select --
         - Once
         - Sometimes
-        - Allways
+        - Always
     validations:
       required: true
 
