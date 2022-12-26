@@ -12,7 +12,7 @@ policy:
           - name: 'Frequency:Sometimes'
             keys: ['Sometimes']
           - name: 'Frequency:Allways'
-            keys: ['Allways']
+            keys: ['Always']
 
       - id: [repro]
         label:
