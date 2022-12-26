@@ -6,7 +6,6 @@ body:
     id: frequency
     attributes:
       label: How frequently does the bug occur?
-      multiple: false
       options:
         - label: -- select --
         - label: Once
