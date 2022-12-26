@@ -29,12 +29,12 @@ body:
   - type: dropdown
     id: services
     attributes:
-      label: What Services are you using?
+      label: What Atlas Services are you using?
       options:
         - -- select --
         - Local Database only
         - Atlas Device Sync
-        - 'Atlas App Services: Auth or Functions etc'
+        - 'Atlas App Services: Function or GraphQL or DataAPI etc'
         - Both Atlas Device Sync and Atlas App Services
     validations:
       required: true
@@ -42,7 +42,7 @@ body:
   - type: dropdown
     id: encryption
     attributes:
-      label: Are you using Encryption?
+      label: Are you using encryption?
       options:
         - -- select --
         - 'Yes'
