@@ -6,11 +6,12 @@ body:
     id: frequency
     attributes:
       label: How frequently does the bug occur?
+      multiple: false
       options:
-        - -- select --
-        - Once
-        - Sometimes
-        - Always
+        - label: -- select --
+        - label: Once
+        - label: Sometimes
+        - label: Always
     validations:
       required: true
 
