@@ -11,7 +11,7 @@ policy:
             keys: ['Once']
           - name: 'Frequency:Sometimes'
             keys: ['Sometimes']
-          - name: 'Frequency:Allways'
+          - name: 'Frequency:Always'
             keys: ['Always']
 
       - id: [repro]
@@ -31,7 +31,7 @@ policy:
           - name: 'SDK-Use:Sync' 
             keys: ['Atlas Device Sync']
           - name: 'SDK-Use:Services'
-            keys: ['Atlas App Services: Auth or Functions etc']
+            keys: ['Atlas App Services: Function or GraphQL or DataAPI etc']
           - name: ['SDK-Use:All']
             keys: ['Both Atlas Device Sync and Atlas App Services']
 
