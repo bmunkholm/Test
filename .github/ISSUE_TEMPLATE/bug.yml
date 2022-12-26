@@ -7,10 +7,10 @@ body:
     attributes:
       label: How frequently does the bug occur?
       options:
-        - label: -- select --
-        - label: Once
-        - label: Sometimes
-        - label: Always
+        - -- select --
+        - Once
+        - Sometimes
+        - Always
     validations:
       required: true
 
