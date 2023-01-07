@@ -1,3 +1,6 @@
+# NOTE: This is a common file that is overwritten by realm/ci-actions sync service
+# and should only be modified in that repository.
+
 # syntax - https://github.com/redhat-plumbers-in-action/advanced-issue-labeler#policy
 # Below keys map from the option used in issue form dropdowns to issue labels
 ---
