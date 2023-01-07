@@ -23,7 +23,8 @@ jobs:
           template-path: .github/ISSUE_TEMPLATE/${{ matrix.template }}
 
       - name: Set labels based on policy
-        uses: bmunkholm/advanced-issue-labeler@main
+        # v2.0.3
+        uses: redhat-plumbers-in-action/advanced-issue-labeler@6ee6fddfd744ee26b977e6a0436916f256896971
         with:
           issue-form: ${{ steps.issue-parser.outputs.jsonString }}
           template: ${{ matrix.template }}
