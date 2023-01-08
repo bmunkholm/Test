@@ -55,8 +55,8 @@ policy:
             keys: ['Xamarin']
           - name: 'App-type:WPF'
             keys: ['WPF']
-          - name: 'App-type:Console/Server'
-            keys: ['Console/Server']
+          - name: 'App-type:Console'
+            keys: ['Console or Server']
           - name: 'App-type:Other'
             keys: ['Other']
            
