@@ -60,7 +60,7 @@ body:
         - Unity
         - Xamarin
         - WPF
-        - Console/Server
+        - Console or Server
         - Other
     validations:
       required: true
