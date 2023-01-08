@@ -1,6 +1,9 @@
 # NOTE: This is a common file that is overwritten by realm/ci-actions sync service
 # and should only be modified in that repository.
 
+# Limitation (from redhat-plumbers-in-action/advanced-issue-labeler)
+# Currently it's not possible to use strings containing ,␣ in the dropdown menus in the issue forms. 
+
 name: Issue labeler (policy)
 on:
   issues:
