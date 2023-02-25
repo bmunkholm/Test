@@ -25,7 +25,9 @@ jobs:
 
       - name: Update version file
         run: |
-          sed -i "s/^version=.*/version=${{ steps.get_version.outputs.version }}/" version.txt
+          git config --local user.name actions-user
+          git config --local user.email "actions@github.com"
+          echo "${{ steps.get_version.outputs.version }}" > version.txt
           git add version.txt
           git commit -m "Update version to ${{ steps.get_version.outputs.version }}"
           git push
