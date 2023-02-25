@@ -13,16 +13,9 @@ jobs:
         with:
           repository: bmunkholm/Test
           ref: ${{ github.event.release.target_commitish }}
-      
-      - name: Set the value
-        id: step_one
-        run: echo "action_state=yellow" >> $GITHUB_ENV
-      - name: Use the value
-        id: step_two
-        run: echo "ACTION ${{ env.action_state }}" # This will output 'yellow'
-      
+  
       - name: Get release version
-        run: echo "version=${{ github.event.release.tag_name }}" >> GITHUB_ENV
+        run: echo "version=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
 
       - name: Checkout repo B
         uses: actions/checkout@v3
@@ -30,10 +23,6 @@ jobs:
           repository: bmunkholm/test2
           ref: main
 
-      - name: Use the value
-        id: step_two2
-        run: echo "ACTION ${{ env.action_state }}" # This will output 'yellow'
-     
       - name: Update version file
         run: |
           echo "${{ env.version }}" > version.txt
