@@ -11,7 +11,7 @@ jobs:
       - name: Checkout repo A
         uses: actions/checkout@v2
         with:
-          repository: owner/repo-a
+          repository: bmunkholm/Test
           ref: ${{ github.event.release.target_commitish }}
       
       - name: Get release version
@@ -20,7 +20,7 @@ jobs:
       - name: Checkout repo B
         uses: actions/checkout@v2
         with:
-          repository: owner/repo-b
+          repository: bmunkholm/test2
           ref: main
 
       - name: Update version file
