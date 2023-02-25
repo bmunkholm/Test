@@ -15,7 +15,7 @@ jobs:
           ref: ${{ github.event.release.target_commitish }}
       
       - name: Get release version
-        run: echo "::set-output name=version::${{ github.event.release.tag_name }}"
+        run: echo "version=${{ github.event.release.tag_name }}" >> GITHUB_ENV
 
       - name: Checkout repo B
         uses: actions/checkout@v3
@@ -25,19 +25,19 @@ jobs:
 
       - name: Update version file
         run: |
+          echo "${{ env.version }}" > version.txt
           git config --local user.name actions-user
           git config --local user.email "actions@github.com"
-          echo "${{ steps.get_version.outputs.version }}" > version.txt
           git add version.txt
-          git commit -m "Update version to ${{ steps.get_version.outputs.version }}"
+          git commit -m "Update version to ${{ env.version }}"
           git push
       
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
         with:
-          title: "Update version to ${{ steps.get_version.outputs.version }}"
-          commit-message: "Update version to ${{ steps.get_version.outputs.version }}"
+          title: "Update version to ${{ env.version }}"
+          commit-message: "Update version to ${{ env.version }}"
           branch: "update-version"
           base: "main"
           labels: "auto-generated"
-          body: "This pull request updates the version in version.txt to ${{ steps.get_version.outputs.version }}."
+          body: "This pull request updates the version in version.txt to ${{ env.version }}."
