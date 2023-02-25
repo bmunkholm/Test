@@ -31,7 +31,7 @@ jobs:
           ref: main
 
       - name: Use the value
-        id: step_two
+        id: step_two2
         run: echo "ACTION ${{ env.action_state }}" # This will output 'yellow'
      
       - name: Update version file
