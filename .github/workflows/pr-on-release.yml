@@ -14,8 +14,15 @@ jobs:
           repository: bmunkholm/Test
           ref: ${{ github.event.release.target_commitish }}
       
+      - name: Set the value
+        id: step_one
+        run: echo "action_state=yellow" >> $GITHUB_ENV
+      - name: Use the value
+        id: step_two
+        run: echo "${{ env.action_state }}" # This will output 'yellow'
+      
       - name: Get release version
-        run: echo "{version}={${{ github.event.release.tag_name }}}" >> GITHUB_ENV
+        run: echo "version=${{ github.event.release.tag_name }}" >> GITHUB_ENV
 
       - name: Checkout repo B
         uses: actions/checkout@v3
