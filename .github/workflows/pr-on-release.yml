@@ -1,4 +1,4 @@
-name: Update version in repo B
+name: Update version in repo B - updated
 
 on:
   release:
